@@ -13,9 +13,11 @@ int main(){
 	Token* tokens[INITIAL_CAPACITY];
 	
 	tokens[0]->type = 0;
-	char val = '1';
-	char* x = &val;
+	char val[2] = {'1','\0'};
+	char* x = &val[2];
 	tokens[0]->value = x;
 
-	cout << tokens[0]->type << "|" << tokens[0]->value << endl;
+	cout << tokens[0]->type << "|" << tokens[0]->value << "test"<<  endl;
+
+	return 0;
 }
